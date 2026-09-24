@@ -1,0 +1,245 @@
+.checkout-page {
+  min-height: 70vh;
+  padding: 70px 20px;
+  background: #f8fafc;
+}
+
+.checkout-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.checkout-header {
+  margin-bottom: 40px;
+}
+
+.checkout-header p {
+  margin-bottom: 8px;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.checkout-header h1 {
+  color: #111827;
+  font-size: 40px;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 30px;
+  align-items: start;
+}
+
+.checkout-form,
+.checkout-summary {
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+}
+
+.checkout-form h2,
+.checkout-summary h2 {
+  margin-bottom: 25px;
+  color: #111827;
+  font-size: 22px;
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 18px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  outline: none;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus {
+  border-color: #2563eb;
+}
+
+.checkout-form textarea {
+  resize: vertical;
+}
+
+.checkout-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.place-order-button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.place-order-button:hover {
+  background: #1d4ed8;
+}
+
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e7eb;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.checkout-item strong {
+  color: #111827;
+}
+
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 2px solid #e5e7eb;
+  color: #111827;
+  font-size: 18px;
+}
+
+.empty-checkout {
+  max-width: 550px;
+  margin: 80px auto;
+  padding: 50px 25px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.empty-checkout h1 {
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.empty-checkout p {
+  margin-bottom: 25px;
+  color: #6b7280;
+}
+
+.empty-checkout a {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 850px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .checkout-page {
+    padding: 45px 15px;
+  }
+
+  .checkout-header h1 {
+    font-size: 32px;
+  }
+
+  .checkout-form,
+  .checkout-summary {
+    padding: 20px;
+  }
+
+  .checkout-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.order-success-page {
+  min-height: 70vh;
+  padding: 70px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+}
+
+.order-success-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 50px 30px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+}
+
+.success-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #16a34a;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.success-label {
+  margin-bottom: 10px;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.order-success-card h1 {
+  margin-bottom: 15px;
+  color: #111827;
+  font-size: 34px;
+}
+
+.order-success-card > p:not(.success-label) {
+  margin-bottom: 28px;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+@media (max-width: 550px) {
+  .order-success-card {
+    padding: 40px 20px;
+  }
+
+  .order-success-card h1 {
+    font-size: 28px;
+  }
+}
