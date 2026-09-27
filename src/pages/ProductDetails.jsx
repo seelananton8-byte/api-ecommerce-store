@@ -12,7 +12,7 @@ export default function ProductDetails() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
+    fetch(import.meta.env.VITE_API_URL)
       .then((response) => response.json())
       .then((data) => {
         const formattedProducts = data.map((product) => ({

@@ -9,7 +9,7 @@ export default function Home() {
   const fetchedData = async () => {
     try {
       const response = await fetch(
-        "https://fakestoreapi.com/products"
+        import.meta.env.VITE_API_URL
       );
 
       const data = await response.json();
